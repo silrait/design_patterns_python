@@ -113,6 +113,16 @@ class Orcamento:
         self.estado_atual.aplica_desconto_extra(self)
 
 
+    def aprova(self):
+        self.estado_atual.aprova(self)
+
+    def reprova(self):
+        self.estado_atual.reprova(self)
+
+    def finaliza(self):
+        self.estado_atual.finaliza(self)
+
+
 class Item:
     def __init__(self, nome, valor):
         self.__nome = nome
